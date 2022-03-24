@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa113a1de6.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVYTGDH8QW"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RVYTGDH8QW');
+    </script>
+    <title>Contact Me</title>
+</head>
+<body>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li class="page"><a href = "index.html">Home</a></li>
+				<li class="page"><a href = "about.html">About</a></li>
+                <li class="page"><a href = "hobbiesandfamily.html">Hobbies and Family</a></li>
+                <li class="page"><a href = "work.html">Work</a></li>
+                <li class="active"><a href = "contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <h1 id="main">Contact Me <i class="fa-solid fa-message"></i></h1>
+    </header>
+    <main class="containercontact">
+        <p>Thank you for viewing my website! If you have any questions, please feel free to fill out the form to get in direct contact with me.</p>
+        <img src="images/profile.jpg" alt="A headshot of myself (Oliver Fishel)" width="200"/>
+        <div class="form">
+            <form action="https://formspree.io/f/meqnzzpa" method = "POST">
+                <fieldset> 
+                    <legend id="form_title"> Fill out the form below:</legend>
+                    <label for="name">Name:</label>
+                        <input type="text" placeholder="Enter your name" name = "name" id="name"><br/>
+                    <label for="email">Email:</label>
+                        <input type="email" placeholder="Enter your email" name = "email" id="email"><br/>
+                    </label><br/>
+                    <label for="message"> Message: 
+                        <input placeholder="Enter your message" id = "message" name="message" required><br>
+                    </label><br/>
+                    <input type = "submit" value = "Submit" id="submit">
+                </fieldset>
+            </form> 
+        </div>
+
+    </main>
+    <footer>
+        <p>Oliver Fishel &copy; 2022<i class="fa-solid fa-fish-fins"></i></p>
+    </footer>
+</body>
+</html>
