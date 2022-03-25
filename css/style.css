@@ -12,11 +12,19 @@ h1{
 }
 
 body{
-    background: linear-gradient(rgb(106, 142, 219), white, rgb(106, 142, 219));
-    display: grid;
-    grid-template-columns: 1fr;
+    background-image: url(../images/background.png);
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
+
+nav li{
+    padding: 10px;
+    display: inline-block;
+    font-size: 25px;
+    margin-inline-start: .5rem;
+    margin-inline-end: .5rem;
+    border-radius: 10px;
+}    
 
 nav{
     background: 50px;
@@ -28,10 +36,13 @@ nav{
 
 nav ul{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     text-align: center;
     justify-content: center;
     padding: 5px;
+}
+
+nav ul li{
     margin: 1px;
 }
 
@@ -49,14 +60,7 @@ footer{
     font-size: 20px;
     
 }
-nav li{
-    padding: 10px;
-    display: inline-block;
-    font-size: 25px;
-    margin-inline-start: .5rem;
-    margin-inline-end: .5rem;
-    border-radius: 10px;
-}
+
 
 a{
     text-decoration: none;
@@ -96,7 +100,7 @@ img{
     align-items: center;
 }
 
-.index{
+/*.index{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +110,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 /*About*/
 .containerabout{
@@ -118,9 +122,10 @@ img{
     margin: auto;
 }
 
-.containerabout p{
-    position:relative;
-    align-items: center;
+.containerabout img{
+    object-fit: cover;
+    width: 80%;
+    max-height: 80%
 }
 
 /*Hobbies and Family*/
@@ -208,13 +213,3 @@ img:hover{
     }
   }
 
-@media screen and (min-width:720px){
-    nav{
-        text-align: center;
-    }
-    nav li{
-        display: flex;
-        width: auto;
-        justify-items: center;
-    }
-}
